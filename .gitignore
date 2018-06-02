@@ -1,6 +1,6 @@
 thanos
 details
 *.pyc
-opencv.sh
+openv.sh
 opencv
 images

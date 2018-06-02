@@ -37,7 +37,7 @@ for (query, queryFeatures) in index.items():
 	# display the top 10 results; 5 images per montage, with
 	# images that are 400x166 pixels
 	montageA = np.zeros((350 * 5, 800, 3), dtype = "uint8")
-	montageB = np.zeros((166 * 5, 400, 3), dtype = "uint8")
+	montageB = np.zeros((350 * 5, 800, 3), dtype = "uint8")
 
 	# loop over the top ten results
 	for j in xrange(0, 10):
