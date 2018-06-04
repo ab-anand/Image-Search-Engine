@@ -1,5 +1,5 @@
 # USAGE
-# python index.py --dataset images --index index.cpickle
+# python index.py --dataset resized_img --index index.cpickle
 
 # import the necessary packages
 from imgsearch.rgbhistogram import RGBHistogram
@@ -26,7 +26,7 @@ index = {}
 desc = RGBHistogram([8, 8, 8])
 
 # use glob to grab the image paths and loop over them
-for imagePath in glob.glob(args["dataset"] + "/*.jpg"):
+for imagePath in glob.glob(args["dataset"] + "/*.png"):
 	# extract our unique image ID (i.e. the filename)
 	k = imagePath[imagePath.rfind("/") + 1:]
 

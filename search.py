@@ -36,8 +36,8 @@ for (query, queryFeatures) in index.items():
 	# we have a total of 25 images in the index, but let's only
 	# display the top 10 results; 5 images per montage, with
 	# images that are 400x166 pixels
-	montageA = np.zeros((350 * 5, 800, 3), dtype = "uint8")
-	montageB = np.zeros((350 * 5, 800, 3), dtype = "uint8")
+	montageA = np.zeros((166 * 5, 400, 3), dtype = "uint8")
+	montageB = np.zeros((166 * 5, 400, 3), dtype = "uint8")
 
 	# loop over the top ten results
 	for j in xrange(0, 10):
@@ -50,11 +50,11 @@ for (query, queryFeatures) in index.items():
 
 		# check to see if the first montage should be used
 		if j < 5:
-			montageA[j * 350:(j + 1) * 350, :] = result
+			montageA[j * 166:(j + 1) * 166, :] = result
 
 		# otherwise, the second montage should be used
 		else:
-			montageB[(j - 5) * 350:((j - 5) + 1) * 350, :] = result
+			montageB[(j - 5) * 166:((j - 5) + 1) * 166, :] = result
 
 	# show the results
 	cv2.imshow("Results 1-5", montageA)
