@@ -9,7 +9,7 @@ import glob
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-d", "--dataset", required = True,
-	help = "Path to the directory that contains the images to be resized")
+				help = "Path to the directory that contains the images to be resized")
 args = vars(ap.parse_args())
 
 

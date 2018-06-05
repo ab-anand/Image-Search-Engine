@@ -1,7 +1,3 @@
-# author: Adrian Rosebrock
-# date: 27 January 2014
-# website: http://www.pyimagesearch.com
-
 # import the necessary packages
 import numpy as np
 
