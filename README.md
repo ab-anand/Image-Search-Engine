@@ -10,3 +10,7 @@ An image Search Engine using opencv
 
 ### Query given: 
 ![Lab](queries/lab-q.png)
+
+
+### Result
+![Result](result.png)
